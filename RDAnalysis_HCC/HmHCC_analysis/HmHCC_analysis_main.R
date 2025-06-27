@@ -6,9 +6,12 @@ source("HmHCC_analysis_1.R")
 for (i in 1:4) {
     commandArgs <- function(...) i
     source("HmHCC_analysis_2.R")
+
+    commandArgs <- function(...) i
+    source("HmHCC_analysis_21_annotation_measures.R")
 }
 
-
+source("HmHCC_analysis_22_Fig_3e.R")
 
 
 

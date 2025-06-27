@@ -1,27 +1,32 @@
 
 # 1. preprocess
-source("MsHCC_analysis_1.R")
+source("MsHCC_analysis_10_preprocess.R")
 
 # 2. annotate and obtain fig. 3.d
 for (i in 1:4) {
     commandArgs <- function(...) i
-    source("MsHCC_analysis_2.R")
+    source("MsHCC_analysis_20_co-embedding_annotation_Fig_3d.R")
+
+    commandArgs <- function(...) i
+    source("MsHCC_analysis_21_annotation_measures.R")
 }
 
 # 3. summary acc for fig. 3.e bottom panel
-source("MsHCC_analysis_3_measures.R")
+source("MsHCC_analysis_22_Fig_3e.R")
 
-# 4. remove unwanted variation
-source("MsHCC_analysis_4_ruv.R")
+# 4. remove unwanted variation and Fig 3.g, 3.f
+source("MsHCC_analysis_30_ruv.R")
+source("MsHCC_analysis_31_Fig_3g.R")
+source("MsHCC_analysis_32_Fig_3f.R")
 
-# 5. find integrate signature genes and obtain fig. 3.g
-source("MsHCC_analysis_5_intsg.R")
 
-# 6. obtain figure 3.f
-source("MsHCC_analysis_6_plothcc.R")
+# 5. enrichment and obtain figure 3.h and figure 3.i
+for (i in 1:4) {
+    commandArgs <- function(...) i
+    source("MsHCC_analysis_40_enrichment.R")
+}
 
-# 7. obtain figure 3.h and figure 3.i
-source("MsHCC_analysis_7_pathway.R")
+source("MsHCC_analysis_41_Fig_3h_3i.R")
 
 
 

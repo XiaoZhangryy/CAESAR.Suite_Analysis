@@ -3,15 +3,15 @@
 ## Validation using CosMx data
 Brief descriptions of simulated scripts (./SimuAnalysis_CosMx folder):
 
-**CosMx_analysis_1.R**: Preprocessing of CosMx data for simulation.
+**CosMx_analysis_10_preprocess.R**: Preprocessing of CosMx data for simulation.
 
-**CosMx_analysis_2.R** and **CosMx_analysis_3.R**: Simulation analysis for Scenario 1 with high-resolution reference and high-resolution target data.
+**CosMx_analysis_21_scenario1_annotation.R**, **CosMx_analysis_22_scenario1_annotation_measures.R** and **CosMx_analysis_23_scenario1_Fig_1f.R**: Simulation analysis for Scenario 1 with high-resolution reference and high-resolution target data.
 
-**CosMx_analysis_4.R** and **CosMx_analysis_5.R**: Simulation analysis for pathway enrichment scoring with high-resolution reference and high-resolution target data.
+**CosMx_analysis_30_enrichment.R** and **CosMx_analysis_31_Fig_1g.R**: Simulation analysis for pathway enrichment scoring with high-resolution reference and high-resolution target data.
 
-**CosMx_analysis_6.R** and **CosMx_analysis_7.R**: Simulation analysis for Scenario 2 with high-resolution reference and low-resolution target data.
+**CosMx_analysis_41_scenario2_annotation.R**, **CosMx_analysis_42_scenario2_annotation_measures.R** and **CosMx_analysis_43_scenario2_Fig_1f.R**: Simulation analysis for Scenario 2 with high-resolution reference and low-resolution target data.
 
-**CosMx_analysis_8.R** and **CosMx_analysis_9.R**: Simulation analysis for Scenario 3 with low-resolution reference and high-resolution target data.
+**CosMx_analysis_51_scenario3_annotation.R**, **CosMx_analysis_52_scenario3_annotation_measures.R** and **CosMx_analysis_53_scenario3_Fig_1f.R**: Simulation analysis for Scenario 3 with low-resolution reference and high-resolution target data.
 
 **CosMx_analysis_main.R**: Process of running simulation.
 
